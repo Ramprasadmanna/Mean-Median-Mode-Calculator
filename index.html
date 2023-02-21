@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document Name -->
+    <title>Measure of Central Tendency</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="Images/Favicon.jpg">
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Goggle Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/29c9f6d431.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="flex center column min-w">
+        <header class="flex center column">
+            <h1>Measure of Central Tendency</h1>
+            <hr>
+        </header>
+        <div class="card-container flex row">
+            <div class="card">
+                <h3 class="card-heading">Select The Output</h3>
+
+                <div class="options-form-1 flex center">
+                    <p class="option-name">Mean</p>
+                    <input type="checkbox" name="Mean" id="">
+                </div>
+                <div class="options-form-1 flex center">
+                    <p class="option-name">Median</p>
+                    <input type="checkbox" name="Median" id="">
+                </div>
+                <div class="options-form-1 flex center">
+                    <p class="option-name">Mode</p>
+                    <input type="checkbox" name="Mode" id="">
+                </div>
+                <div class="flex right">
+                    <button class="next flex center" id="next1">Next <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-heading">Type Of Data ?</h3>
+
+
+                <label for="Raw" class="o1">
+                    <input type="radio" name="Data" id="Raw">
+                    <div class="options-form-2 flex center Raw">
+                        <p class="option-name ">Raw</p>
+                    </div>
+                </label>
+
+                <label for="Frequency" class="o2">
+                    <input type="radio" name="Data" id="Frequency">
+                    <div class="options-form-2 flex center Frequency">
+                        <p class="option-name">Frequency</p>
+                    </div>
+                </label>
+                <div class="flex space-between">
+                    <button class="prev flex center" id="previous1"><i
+                            class="fa-solid fa-arrow-left"></i>Previous</button>
+                    <button class="next flex center" id="submit">Submit<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solution Section -->
+
+        <div class="solution flex center column display-none opacity-0">
+            <p class="solution-heading ">Solution</p>
+            <hr>
+
+            <!-- Number of Data Input -->
+            <div class="flex row center no-of-data">
+                <p>Enter N : </p>
+                <input type="number" required id="N">
+                <button class="N-Submit solution-Btns">Next <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+            <hr>
+
+            <!-- Raw Data Input -->
+            <div class="Raw-Data flex column md-column center wrap display-none opacity-0">
+                <p>Enter Raw Data : </p>
+                <div class="Raw-Data-Inputs flex row center wrap"></div>
+                <button class="solution-Btns Raw-Submit">Get Solution <i class="fa-solid fa-check"></i></button>
+            </div>
+            <hr>
+
+            <!-- Frequency Data Input -->
+            <div class="Frequency-Data flex row center wrap display-none">
+                <p>Enter Frequency Data</p>
+                <div class="Frequency-Data-Inputs flex column center">
+                    <div class="dataX flex row left">
+                        <p>X</p>
+                    </div>
+                    <div class="dataY flex row left">
+                        <p>Y</p>
+                    </div>
+                </div>
+                <button class="solution-Btns Frequency-Submit">Get Solution <i class="fa-solid fa-check"></i></button>
+            </div>
+            <hr>
+
+            <!-- Ans -->
+            <div class="Ans opacity-0 ">
+                <p class="heading">Answer</p>
+                <div class="flex row center md-column">
+                    <div class="Ans-container  display-none">
+                        <p>Mean : <span id="Mean">00</span></p>
+                    </div>
+                    <div class="Ans-container display-none">
+                        <p>Median : <span id="Median">00</span></p>
+                    </div>
+                    <div class="Ans-container display-none">
+                        <p>Mode : <span id="Mode">00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="flex center">
+            <p>Made By </p>
+            <p><a href="">&copy; Shruti Maity</a></p>
+            <p><a href="">&copy; Ramprasad Manna</a></p>
+        </footer>
+
+    </div>
+    <!-- Javascript -->
+    <script src="index.js"></script>
+</body>
+
+</html>
