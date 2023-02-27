@@ -1,7 +1,7 @@
 # Mean Median Mode Calculator For Raw and Frequency Data
 
 - Mean Median Mode Calculator Made Using Html Css Js 
-- Link To This Site : https://ramprasadmanna.github.io/Cost-Project/
+- Link To This Site : https://ramprasadmanna.github.io/Mean-Median-Mode-Calculator/
 
 # Features
 - Mean Median Mode Calculator For Both Raw and Frequency Data
