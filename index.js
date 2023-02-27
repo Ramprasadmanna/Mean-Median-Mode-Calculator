@@ -319,8 +319,13 @@ function modeRaw(arr) {
     // Find all values that have the maximum frequency
     const mode = [];
     for (const val in frequency) {
-        if (frequency[val] === maxFreq) {
-            mode.push(val);
+        if (maxFreq != 1) {
+            if (frequency[val] === maxFreq) {
+                mode.push(parseInt(val));
+            }
+        }
+        else {
+            mode[0] = "-";
         }
     }
     // If there is more than one mode, return an array of modes
